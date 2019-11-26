@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FingerPainter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zyC-Qc-Q6x">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem title="Clear" id="jRe-MV-s8D">
+                                        <connections>
+                                            <action selector="clearButtonTapped:" destination="BYZ-38-t0r" id="udI-34-9uQ"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="03J-en-3LQ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="03J-en-3LQ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="3bL-Pg-sz8"/>
+                            <constraint firstItem="zyC-Qc-Q6x" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Blu-DW-EH9"/>
+                            <constraint firstItem="zyC-Qc-Q6x" firstAttribute="top" secondItem="03J-en-3LQ" secondAttribute="bottom" id="K81-k7-iLY"/>
+                            <constraint firstItem="03J-en-3LQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="WFT-cu-DuJ"/>
+                            <constraint firstItem="03J-en-3LQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gkx-sb-lta"/>
+                            <constraint firstItem="zyC-Qc-Q6x" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="lZ5-l2-KhE"/>
+                            <constraint firstItem="zyC-Qc-Q6x" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="qzY-YD-IlN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="canvas" destination="03J-en-3LQ" id="4F0-3o-6Nn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="128.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
